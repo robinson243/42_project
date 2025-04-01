@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 18:01:45 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/01 18:53:47 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/01 19:16:13 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ int	main(int ac, char **av)
 	int		size;
 
 	if (ac == 1)
-		ft_putstr("File name missing.");
+		ft_putstr("File name missing.\n");
 	if (ac > 2)
-		ft_putstr("Too many arguments.");
+		ft_putstr("Too many arguments.\n");
 	if (ac == 2)
 	{
 		fd = open(av[1], O_RDONLY);
