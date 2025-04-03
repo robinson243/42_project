@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 21:51:25 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/03 21:57:36 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/03 22:55:07 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	int	i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	i = 0;
@@ -23,7 +23,11 @@ void	ft_bzero(void *s, size_t n)
 		ptr[i++] = 0;
 }
 
-int main(void)
+/* int main(void)
 {
-	
-}
+	char str[50] = "hello , world";
+	char str2[50] = "hello , world";
+	printf("%s\n", str);
+	ft_bzero(str, 5);
+	printf("%s", str);
+} */

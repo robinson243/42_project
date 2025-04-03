@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:08:28 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/03 21:45:59 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/03 22:43:55 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 
 #include <unistd.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <string.h>
 #include <stdio.h>
 
 void	*ft_memset(void *s, int c, size_t n);
-
+void	ft_bzero(void *s, size_t n);
+void	*memcpy(void *dest, const void *src, size_t count);
 
 #endif

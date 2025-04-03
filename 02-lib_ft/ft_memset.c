@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:13:29 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/03 21:49:31 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/03 22:55:18 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	ptr = s;
