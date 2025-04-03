@@ -6,13 +6,13 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 22:43:30 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/03 22:54:12 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/03 23:01:36 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memcpy(void *dest, const void *src, size_t count)
+void	*ft_memcpy(void *dest, const void *src, size_t count)
 {
 	size_t			i;
 	unsigned char	*dest_char;
@@ -28,3 +28,14 @@ void	*memcpy(void *dest, const void *src, size_t count)
 	}
 	return (dest_char);
 }
+
+/* int main(void)
+{
+	char source[ 80 ] = "This is the source string";
+	char target[ 80 ] = "This is the target string";
+
+	printf("%s\n", target);
+	ft_memcpy(target, source, 15);
+	printf("%s", target);
+
+} */
