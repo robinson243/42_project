@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 22:43:30 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/03 23:01:36 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/04 00:21:33 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t count)
 {
-	size_t			i;
-	unsigned char	*dest_char;
-	unsigned char	*src_char;
+	size_t				i;
+	unsigned char		*dest_char;
+	const unsigned char	*src_char;
 
 	dest_char = dest;
 	src_char = src;
