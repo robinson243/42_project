@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:08:28 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/05 01:14:58 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/05 05:03:26 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,7 @@ size_t	ft_strlen(const char *str);
 char	*ft_strdup(const char *str);
 char	*ft_strcpy(char *str1, const char *str2);
 char	*ft_strcat(char *dest, const char *src);
+char	*ft_strncat(char *dest, const char *src, size_t count);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 #endif
