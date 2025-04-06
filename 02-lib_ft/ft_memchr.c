@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 16:00:49 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/04 16:08:03 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/06 02:12:16 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memchr(const void *buf, int c, size_t count)
 	buf_char = (unsigned char *)buf;
 	while (i < count)
 	{
-		if (buf_char[i] == c)
+		if (buf_char[i] == (char)c)
 			return (buf_char + i);
 		i++;
 	}

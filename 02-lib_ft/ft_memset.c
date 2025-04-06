@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:13:29 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/03 22:55:18 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/06 02:12:42 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	ptr = s;
 	i = 0;
 	while (i < n)
-		ptr[i++] = c;
+		ptr[i++] = (char)c;
 	return (ptr);
 }
 /* 
