@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:08:28 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/06 17:42:49 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/06 18:19:05 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strstr(const char *str, const char *target);
 char	*ft_strnstr(const char *str, const char *target, size_t len);
 int	ft_strcmp(const char *string1, const char *string2);
 int	ft_strncmp(const char *str1, const char *str2, size_t count);
-
+int	ft_atoi(const char *str);
 
 
 #endif
