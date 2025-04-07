@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 16:50:48 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/07 16:59:45 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/07 20:26:40 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ int	ft_isalpha(int character)
 	char	letter;
 
 	letter = (char)character;
-	if (letter >= 'a' && letter <= 'z' || letter >= 'A' && letter <= 'Z' )
+	if ((letter >= 'a' && letter <= 'z') || (letter >= 'A' && letter <= 'Z' ))
 		return (1);
-	return (0);	
+	return (0);
 }
 
-int main(void)
+/* int main(void)
 {
 	printf("%d", ft_isalpha('m'));
-}
+} */

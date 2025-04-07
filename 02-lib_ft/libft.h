@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:08:28 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/07 17:00:11 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/07 20:38:56 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	ft_strcmp(const char *string1, const char *string2);
 int	ft_strncmp(const char *str1, const char *str2, size_t count);
 int	ft_atoi(const char *str);
 int	ft_isalpha(int character);
+int	ft_isdigit(int character);
+int	ft_isalnum(int character);
 
 
 #endif
