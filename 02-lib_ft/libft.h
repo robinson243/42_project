@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:08:28 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/08 12:30:34 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/08 12:44:13 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int	ft_isalpha(int character);
 int	ft_isdigit(int character);
 int	ft_isalnum(int character);
 int	ft_isascii(int c);
-int ft_isprint(int c);
+int	ft_isprint(int c);
+int	ft_toupper(int ch);
+int	ft_tolower(int ch);
 
 #endif
