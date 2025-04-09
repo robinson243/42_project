@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:08:28 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/08 12:44:13 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/09 12:22:20 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,10 @@ int	ft_isascii(int c);
 int	ft_isprint(int c);
 int	ft_toupper(int ch);
 int	ft_tolower(int ch);
+/* Fonctions supplémentaires */
+void	*ft_memalloc(size_t size);
+void	ft_memdel(void **ap);
+char	*ft_strnew(size_t size);
+
 
 #endif

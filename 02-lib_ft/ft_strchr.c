@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 15:21:01 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/06 02:13:27 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/09 11:12:53 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ char	*ft_strchr(const char *string, int c)
 	while (buffer[i])
 	{
 		if (buffer[i] == (char)c)
-			return (buffer + i);
+			return ((char *)buffer + i);
 		i++;
 	}
 	if ((char)c == '\0')
-		return (buffer + i);
+		return ((char *)buffer + i);
 	return (NULL);
 }
 
