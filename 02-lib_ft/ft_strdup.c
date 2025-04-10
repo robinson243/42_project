@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 00:48:32 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/10 00:54:08 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/10 09:40:29 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *str)
 	int		i;
 
 	i = 0;
-	dest = malloc(sizeof(char) * ft_strlen(str));
+	dest = malloc(sizeof(char) * ft_strlen(str) + 1);
 	if (!dest)
 		return (NULL);
 	while (str[i])
