@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 10:44:39 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/10 11:27:25 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/10 13:35:24 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,9 +65,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 			i++;
 	}
 	dest[count_len(s1, set)] = '\0';
-	return (dest); 
+	return (dest);
 }
-
+/* 
 int main() {
     // Test 1 : Chaîne sans caractères à trimmer
     char *result1 = ft_strtrim("Hello, World!", "XYZ");
@@ -110,4 +110,4 @@ int main() {
     free(result8);
 
     return 0;
-}
+} */
