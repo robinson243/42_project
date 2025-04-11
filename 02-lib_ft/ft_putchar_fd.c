@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 10:48:09 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/11 11:16:12 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/11 11:18:29 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (fd < 0)
+	if (fd < 0 || !c)
 		return ;
 	write(fd, &c, 1);
 }

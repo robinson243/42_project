@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 10:53:30 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/11 11:14:01 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/11 11:18:43 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_put(int fd, char *str)
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (fd < 0)
+	if (fd < 0 || !s)
 		return ;
 	ft_put(fd, s);
 }
