@@ -6,13 +6,13 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 10:48:09 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/11 10:59:24 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/11 11:16:12 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void 	ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	if (fd < 0)
 		return ;
