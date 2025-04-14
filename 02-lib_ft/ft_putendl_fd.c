@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 11:08:06 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/11 11:19:17 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/14 20:05:00 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_put(int fd, char *str)
 	i = 0;
 	while (*str)
 	{
-		*str++;
+		str++;
 		i++;
 	}
 	write(fd, (str - i), i);

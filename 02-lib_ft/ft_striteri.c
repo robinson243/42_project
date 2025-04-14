@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 03:19:00 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/13 03:26:36 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/14 20:05:36 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	while (*s)
 	{
 		f(i, s);
-		*s++;
+		s++;
 		i++;
 	}
 }
