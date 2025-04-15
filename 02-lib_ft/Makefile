@@ -6,7 +6,7 @@
 #    By: romukena <romukena@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/01 19:45:22 by romukena          #+#    #+#              #
-#    Updated: 2025/04/15 04:56:10 by romukena         ###   ########.fr        #
+#    Updated: 2025/04/15 15:15:54 by romukena         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ SRCS = \
 	ft_putendl_fd.c ft_putnbr_fd.c ft_strmapi.c ft_striteri.c
 
 SRCS_bonus = \
-	ft_lstadd_front.c ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
+	ft_lstadd_front.c ft_lstnew.c ft_lstsize.c ft_lstlast.c \
+	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c
 
 OBJS = $(SRCS:.c=.o)
 
