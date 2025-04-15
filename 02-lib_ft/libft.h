@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:08:28 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/14 20:06:37 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/15 02:52:38 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
-
-
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
@@ -57,7 +55,6 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-
 /* Prototype de la liste utilisée */
 
 typedef struct	s_list
@@ -67,6 +64,9 @@ typedef struct	s_list
 }	t_list;
 
 /* Fonctions sur liste */
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+int	ft_lstsize(t_list *lst);
+
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 10:44:39 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/11 10:13:17 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/15 02:43:08 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dest[i] = '\0';
 	return (dest);
 }
-/* 
-int	main(void)
+
+/* int	main(void)
 {
 	char *res;
 

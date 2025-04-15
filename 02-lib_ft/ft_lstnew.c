@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 19:55:18 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/14 20:03:25 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/15 02:27:49 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_list	*ft_lstnew(void *content)
 	return (node);
 }
 
-int main(void)
+/* int main(void)
 {
     char *str = "Hello, world!";
     t_list *node = ft_lstnew(str);
@@ -39,4 +39,4 @@ int main(void)
     printf("Next : %p\n", node->next);
 
     return 0;
-}
+} */
