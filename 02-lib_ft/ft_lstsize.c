@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 02:44:27 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/15 03:13:17 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/15 04:59:30 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	ft_lstsize(t_list *lst)
 	int		count;
 
 	count = 0;
-
 	if (lst == NULL)
 		return (count);
 	while (lst != NULL)
@@ -28,7 +27,7 @@ int	ft_lstsize(t_list *lst)
 	return (count);
 }
 
-int main(void) {
+/* int main(void) {
     t_list *list = NULL;
 
     // Création de quelques éléments
@@ -51,4 +50,4 @@ int main(void) {
     free(node3);
 
     return 0;
-}
+} */

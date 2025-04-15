@@ -6,7 +6,7 @@
 #    By: romukena <romukena@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/01 19:45:22 by romukena          #+#    #+#              #
-#    Updated: 2025/04/15 02:54:16 by romukena         ###   ########.fr        #
+#    Updated: 2025/04/15 04:56:10 by romukena         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,7 @@ SRCS = \
 	ft_putendl_fd.c ft_putnbr_fd.c ft_strmapi.c ft_striteri.c
 
 SRCS_bonus = \
-	ft_lstadd_front.c ft_lstnew.c ft_lstsize.c \
-
+	ft_lstadd_front.c ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
 
 OBJS = $(SRCS:.c=.o)
 
@@ -38,19 +37,19 @@ CFLAGS = -Wall -Wextra -Werror
 all:	$(NAME)
 
 $(NAME): $(OBJS) 
-	ar rcs $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 
 %.o: %.c
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 bonus : $(OBJS_bonus) $(OBJS)
-	ar rcs $(NAME) $(OBJS_bonus)
+	@ar rcs $(NAME) $(OBJS_bonus)
 
 clean:
-	$(RM) $(OBJS) $(OBJS_bonus)
+	@$(RM) $(OBJS) $(OBJS_bonus)
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
 
