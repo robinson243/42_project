@@ -6,7 +6,7 @@
 #    By: romukena <romukena@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/01 19:45:22 by romukena          #+#    #+#              #
-#    Updated: 2025/04/15 15:15:54 by romukena         ###   ########.fr        #
+#    Updated: 2025/04/16 14:22:04 by romukena         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ SRCS = \
 
 SRCS_bonus = \
 	ft_lstadd_front.c ft_lstnew.c ft_lstsize.c ft_lstlast.c \
-	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c
+	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstmap.c \
+	ft_lstiter.c
 
 OBJS = $(SRCS:.c=.o)
 
