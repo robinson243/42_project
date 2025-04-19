@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 17:18:15 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/19 17:37:30 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/20 00:49:27 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ int	ft_memcmp(const void *buf1, const void *buf2, size_t count)
 	printf("str1 : %s; str2 : %s ; ", myStr1, myStr2);
 	printf("difference is %d | %d\n", cmp, cmp1) ;
 
-	printf(" le res %d | et vrai %d", ft_memcmp("abcdefghij", "abcdefgxyz", 7), memcmp("abcdefghij", "abcdefgxyz", 7));
+	printf(" le res %d", ft_memcmp("abcdefghij", "abcdefgxyz", 7));
 	return 0;
   } */
