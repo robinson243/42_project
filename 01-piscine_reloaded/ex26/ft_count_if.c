@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/29 03:00:14 by romukena          #+#    #+#             */
-/*   Updated: 2025/03/29 03:17:28 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/24 16:42:42 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,22 +16,15 @@
 int	ft_count_if(char **tab, int (*f)(char *))
 {
 	int	i;
-	int	j;
 	int	count;
 
 	i = 0;
-	j = 0;
 	count = 0;
 	while (tab[i])
 	{
-		if (f(tab[i]) == 1)
+		if (f(tab[i]))
 		{
-			while (tab[i][j])
-			{
-				j++;
-			}
-			count += j;
-			j = 0;
+			count++;
 		}
 		i++;
 	}

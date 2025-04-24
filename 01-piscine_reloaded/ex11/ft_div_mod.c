@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 16:44:10 by romukena          #+#    #+#             */
-/*   Updated: 2025/03/22 16:45:27 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/24 16:28:44 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;
-	*mod = a / b;
+	*mod = a % b;
 }

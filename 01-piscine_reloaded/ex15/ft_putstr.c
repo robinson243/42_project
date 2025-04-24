@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 18:06:57 by romukena          #+#    #+#             */
-/*   Updated: 2025/03/22 18:12:18 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/24 16:43:18 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void	ft_putchar(char e)
-{
-	write(1, &e, 1);
-}
+void	ft_putchar(char e);
 
 void	ft_putstr(char *str)
 {

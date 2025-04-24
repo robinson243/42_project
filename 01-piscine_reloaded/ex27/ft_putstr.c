@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 18:00:11 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/01 18:12:07 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/24 21:36:24 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void	ft_putstr(char *str)
-{
-	int	i;
+#include <unistd.h>
 
-	i = 0;
-	while (str[i])
-		write(1, &str[i++], 1);
+void	ft_putstr(int fd)
+{
+	size_t	read_bytes;
+	char	buffer[1025];
+
+	read_bytes = read(fd, buffer, 1024);
+	while (read_bytes > 0)
+	{
+		write(1, buffer, read_bytes);
+		read_bytes = read(fd, buffer, 1024);
+	}
 }

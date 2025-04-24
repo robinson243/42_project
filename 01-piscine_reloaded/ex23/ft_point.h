@@ -6,17 +6,17 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 02:26:25 by romukena          #+#    #+#             */
-/*   Updated: 2025/03/24 16:17:10 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/24 17:12:44 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_POINT_H
-#define FT_POINT_H
+# define FT_POINT_H
 
-struct	s_point
+typedef struct s_point
 {
 	int	x;
 	int	y;
-} t_point;
+}	t_point;
 
 #endif

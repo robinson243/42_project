@@ -6,7 +6,7 @@
 #    By: romukena <romukena@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/01 18:13:32 by romukena          #+#    #+#              #
-#    Updated: 2025/04/01 18:56:09 by romukena         ###   ########.fr        #
+#    Updated: 2025/04/24 16:24:36 by romukena         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,6 @@ RM = rm -f
 
 %.o: %.c
 	@$(CC) $(CFLAGS) -c $< -o $@
-
 
 CFLAGS = -Wall -Wextra -Werror
 

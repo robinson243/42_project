@@ -6,13 +6,13 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/23 02:07:41 by romukena          #+#    #+#             */
-/*   Updated: 2025/03/23 02:17:44 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/24 16:20:34 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
-#define FT_ABS_H
+# define FT_ABS_H
 
-#define ABS(value) ((value) >= 0 ? (value) : -(value))
+# define ABS(x) ((x) >= 0 ? (x) : -(x))
 
 #endif
