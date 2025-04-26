@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 09:07:04 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/26 15:40:24 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/27 00:39:16 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void	*free_tab(char **tab)
 }
 
 char	**create_tab(char const *s, char c)
-{	
+{
 	char	**tab;
 
 	tab = (char **)malloc(sizeof(char *) * (count_words((char *)s, c) + 1));
@@ -87,36 +87,50 @@ char	**ft_split(char const *s, char c)
 	return (tab);
 }
 
-// int main()
-// {
-//     char str[] = "Hello, world! Welcome to C programming.";
-//     char charset = ' ';
+/* int main()
+{
+    char str[] = "Hello, world! Welcome to C programming.";
+    char charset = ' ';
 
-//     char **result = ft_split(str, charset);
-//     int i = 0;
+	char **res = ft_split("  tripouille  42  ", ' ');
 
-//     // Vérification si l'allocation a réussi.
-//     if (!result)
-//     {
-//         printf("Erreur d'allocation mémoire\n");
-//         return 1;
-//     }
+    char **result = ft_split(str, charset);
+    int i = 0;
 
-//     // Afficher les mots séparés
-//     while (result[i])
-//     {
-//         printf("Mot %d : %s\n", i + 1, result[i]);
-//         i++;
-//     }
+    // Vérification si l'allocation a réussi.
+    if (!result && !res)
+    {
+        printf("Erreur d'allocation mémoire\n");
+        return 1;
+    }
 
-//     // Si tout va bien, on libère la mémoire allouée
-//     i = 0;
-//     while (result[i])
-//     {
-//         free(result[i]);  // Libérer chaque mot
-//         i++;
-//     }
-//     free(result);  // Libérer le tableau de mots
+    // Afficher les mots séparés
+    while (result[i])
+    {
+        printf("Mot %d : %s\n", i + 1, result[i]);
+        i++;
+    }
+	for (int i = 0; res[i]; i++)
+	{
+		printf("Mot %d : %s\n", i + 1, result[i]);
+	}
+	
 
-//     return 0;
-// }
+    // Si tout va bien, on libère la mémoire allouée
+    i = 0;
+    while (result[i])
+    {
+        free(result[i]);  // Libérer chaque mot
+        i++;
+    }
+	i = 0;
+    while (res[i])
+    {
+        free(res[i]);  // Libérer chaque mot
+        i++;
+    }
+    free(result);  // Libérer le tableau de mots
+	free(res);
+
+    return 0;
+} */
