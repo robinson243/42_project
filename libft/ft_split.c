@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 09:07:04 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/21 16:53:17 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/26 15:40:24 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,27 @@ int	count_words(char *str, char c)
 	return (count);
 }
 
+void	*free_tab(char **tab)
+{
+	int	i;
+
+	i = 0;
+	while (tab[i] != NULL)
+		free(tab[i++]);
+	free(tab);
+	return (NULL);
+}
+
+char	**create_tab(char const *s, char c)
+{	
+	char	**tab;
+
+	tab = (char **)malloc(sizeof(char *) * (count_words((char *)s, c) + 1));
+	if (!tab)
+		return (0);
+	return (tab);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		start;
@@ -47,9 +68,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	tab = (char **)malloc(sizeof(char *) * (count_words((char *)s, c) + 1));
-	if (!tab)
-		return (0);
+	tab = create_tab(s, c);
 	while (s[i])
 	{
 		while (s[i] && is_charset(c, s[i]))
@@ -57,42 +76,47 @@ char	**ft_split(char const *s, char c)
 		start = i;
 		while (s[i] && !is_charset(c, s[i]))
 			i++;
-		tab[j++] = ft_substr(s, start, (i - start));
+		if (start < i)
+		{
+			tab[j] = ft_substr(s, start, i - start);
+			if (!tab[j++])
+				return (free_tab(tab));
+		}
 	}
 	tab[j++] = NULL;
 	return (tab);
 }
 
-/* int main()
-{
-    char str[] = "Hello, world! Welcome to C programming.";
-    char charset = ' ';
+// int main()
+// {
+//     char str[] = "Hello, world! Welcome to C programming.";
+//     char charset = ' ';
 
-    char **result = ft_split(str, charset);
-    int i = 0;
+//     char **result = ft_split(str, charset);
+//     int i = 0;
 
-    // Vérification si l'allocation a réussi.
-    if (!result)
-    {
-        printf("Erreur d'allocation mémoire\n");
-        return 1;
-    }
+//     // Vérification si l'allocation a réussi.
+//     if (!result)
+//     {
+//         printf("Erreur d'allocation mémoire\n");
+//         return 1;
+//     }
 
-    // Afficher les mots séparés
-    while (result[i])
-    {
-        printf("Mot %d : %s\n", i + 1, result[i]);
-        i++;
-    }
+//     // Afficher les mots séparés
+//     while (result[i])
+//     {
+//         printf("Mot %d : %s\n", i + 1, result[i]);
+//         i++;
+//     }
 
-    // Si tout va bien, on libère la mémoire allouée
-    i = 0;
-    while (result[i])
-    {
-        free(result[i]);  // Libérer chaque mot
-        i++;
-    }
-    free(result);  // Libérer le tableau de mots
+//     // Si tout va bien, on libère la mémoire allouée
+//     i = 0;
+//     while (result[i])
+//     {
+//         free(result[i]);  // Libérer chaque mot
+//         i++;
+//     }
+//     free(result);  // Libérer le tableau de mots
 
-    return 0;
-} */
+//     return 0;
+// }
