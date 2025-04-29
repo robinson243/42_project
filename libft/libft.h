@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 01:08:28 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/30 00:50:37 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 01:03:24 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 # include <fcntl.h>
 
 void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dest, const void *src, size_t count);
+void	ft_bzero(void *s, size_t len);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *buf, int c, size_t count);
 int		ft_memcmp(const void *buf1, const void *buf2, size_t count);
 size_t	ft_strlen(const char *s);
@@ -39,7 +39,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int ch);
 int		ft_tolower(int ch);
-void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t len);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 void	*ft_calloc(size_t num, size_t size);
 /* Fonctions supplémentaires */
