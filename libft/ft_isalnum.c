@@ -6,17 +6,17 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 20:30:43 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/07 20:44:02 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 00:28:34 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int character)
+int	ft_isalnum(int c)
 {
 	char	alpha;
 
-	alpha = (char)character;
+	alpha = (char)c;
 	if (ft_isdigit(alpha) || ft_isalpha(alpha))
 		return (1);
 	return (0);

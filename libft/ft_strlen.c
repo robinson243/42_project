@@ -6,20 +6,20 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 00:35:10 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/05 00:44:07 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 00:48:59 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
 	const char	*end;
 
-	end = str;
+	end = s;
 	while (*end)
 		end++;
-	return (end - str);
+	return (end - s);
 }
 /* int main(void)
 {
