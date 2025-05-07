@@ -6,20 +6,20 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 16:00:49 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/19 17:32:14 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 12:23:53 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *buf, int c, size_t count)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;
 	unsigned char	*buf_char;
 
-	buf_char = (unsigned char *)buf;
+	buf_char = (unsigned char *)s;
 	i = 0;
-	while (i < count)
+	while (i < n)
 	{
 		if (buf_char[i] == (unsigned char)c)
 		{

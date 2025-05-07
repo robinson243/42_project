@@ -6,19 +6,19 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 01:47:51 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/09 11:16:30 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 12:51:37 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *string, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	size_t			len;
 	size_t			i;
 	unsigned char	*buffer;
 
-	buffer = (unsigned char *)string;
+	buffer = (unsigned char *)s;
 	len = ft_strlen((const char *)buffer);
 	i = 0;
 	while (i < len)

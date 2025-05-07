@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 18:00:20 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/09 11:10:55 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 12:16:58 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	is_space(char c)
 	return (0);
 }
 
-int	ft_atoi(const char *str)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	res;
@@ -28,16 +28,16 @@ int	ft_atoi(const char *str)
 	i = 0;
 	res = 0;
 	minus = 1;
-	while (is_space(str[i]))
+	while (is_space(nptr[i]))
 		i++;
-	if (str[i] == '-' || str[i] == '+')
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		if (str[i] == '-')
+		if (nptr[i] == '-')
 			minus *= -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-		res = res * 10 + (str[i++] - '0');
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+		res = res * 10 + (nptr[i++] - '0');
 	return (res * minus);
 }
 /* int main(int ac, char **av)

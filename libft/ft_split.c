@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 09:07:04 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/30 00:44:58 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 13:46:07 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,27 +38,6 @@ int	count_words(char *str, char c)
 	return (count);
 }
 
-void	*free_tab(char **tab)
-{
-	int	i;
-
-	i = 0;
-	while (tab[i] != NULL)
-		free(tab[i++]);
-	free(tab);
-	return (NULL);
-}
-
-char	**create_tab(char const *s, char c)
-{
-	char	**tab;
-
-	tab = (char **)malloc(sizeof(char *) * (count_words((char *)s, c) + 1));
-	if (!tab)
-		return (0);
-	return (tab);
-}
-
 char	**ft_split(char const *s, char c)
 {
 	int		start;
@@ -68,7 +47,11 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	tab = create_tab(s, c);
+	if (!s)
+		return (NULL);
+	tab = (char **)malloc(sizeof(char *) * (count_words((char *)s, c) + 1));
+	if (!tab)
+		return (0);
 	while (s[i])
 	{
 		while (s[i] && is_charset(c, s[i]))
@@ -77,13 +60,9 @@ char	**ft_split(char const *s, char c)
 		while (s[i] && !is_charset(c, s[i]))
 			i++;
 		if (start < i)
-		{
-			tab[j] = ft_substr(s, start, i - start);
-			if (!tab[j++])
-				return (free_tab(tab));
-		}
+			tab[j++] = ft_substr(s, start, i - start);
 	}
-	tab[j++] = NULL;
+	tab[j] = NULL;
 	return (tab);
 }
 

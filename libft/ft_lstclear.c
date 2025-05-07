@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 15:16:28 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/15 15:55:08 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 16:18:12 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	current = *lst;
 	if (!*lst || !del)
 		return ;
-	while (current->next != NULL)
+	while (current)
 	{
 		data_next = current->next;
 		del(current->content);

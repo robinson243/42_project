@@ -6,28 +6,28 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 17:18:15 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/20 01:11:41 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 12:26:45 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *buf1, const void *buf2, size_t count)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	const unsigned char	*s1;
-	const unsigned char	*s2;
+	const unsigned char	*str1;
+	const unsigned char	*str2;
 	size_t				i;
 
-	s1 = buf1;
-	s2 = buf2;
+	str1 = s1;
+	str2 = s2;
 	i = 0;
-	if (count <= 0)
+	if (n <= 0)
 		return (0);
-	while ((i < count - 1) && s1[i] == s2[i])
+	while ((i < n - 1) && str1[i] == str2[i])
 	{
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	return (str1[i] - str2[i]);
 }
 /* int main() {
 	char myStr1[] = "ABCe";

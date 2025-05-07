@@ -6,7 +6,7 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 04:43:31 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/15 04:59:18 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 17:56:27 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,17 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*current;
 
+	if (*lst == NULL)
+	{
+		*lst = new;
+		return ;
+	}
 	current = *lst;
 	while (current->next != NULL)
 		current = current->next;
 	current->next = new;
 }
+
 /* 
 int main(void) {
     t_list *list = NULL;

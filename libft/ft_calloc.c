@@ -6,23 +6,23 @@
 /*   By: romukena <romukena@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 00:59:10 by romukena          #+#    #+#             */
-/*   Updated: 2025/04/22 18:29:10 by romukena         ###   ########.fr       */
+/*   Updated: 2025/04/30 12:20:35 by romukena         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdint.h>
 
-void	*ft_calloc(size_t num, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*dest;
 
-	if (size != 0 && num > SIZE_MAX / size)
+	if (size != 0 && nmemb > SIZE_MAX / size)
 		return (NULL);
-	dest = malloc(num * size);
+	dest = malloc(nmemb * size);
 	if (!dest)
 		return (NULL);
-	ft_bzero(dest, num * size);
+	ft_bzero(dest, nmemb * size);
 	return (dest);
 }
 
